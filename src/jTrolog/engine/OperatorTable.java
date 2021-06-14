@@ -7,7 +7,7 @@ import jTrolog.terms.Term;
 
 import java.util.*;
 
-import org.checkerframework.checker.iteration.qual.HasNext;
+/*import org.checkerframework.checker.iteration.qual.HasNext;*/
 
 /**
  * Map of Prolog operators.
