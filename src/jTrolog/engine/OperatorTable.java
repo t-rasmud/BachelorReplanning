@@ -7,6 +7,8 @@ import jTrolog.terms.Term;
 
 import java.util.*;
 
+import org.checkerframework.checker.iteration.qual.HasNext;
+
 /**
  * Map of Prolog operators.
  * A LinkedHashMap is set up to store each registered operator as:
@@ -74,7 +76,7 @@ class OperatorTable implements java.io.Serializable {
             return false;
         }
 
-        public Object next() {
+        public Object next(@HasNext OperatorIterator this) {
             if (!hasNext())
                 throw new RuntimeException("check hasNext before calling next on OperatorIterator.");
             String name = (String) underlyingIT.next();
