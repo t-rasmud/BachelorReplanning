@@ -76,7 +76,7 @@ class OperatorTable implements java.io.Serializable {
             return false;
         }
 
-        public Object next(@HasNext OperatorIterator this) {
+        public Object next(/*@HasNext OperatorIterator this*/) {
             if (!hasNext())
                 throw new RuntimeException("check hasNext before calling next on OperatorIterator.");
             String name = (String) underlyingIT.next();
