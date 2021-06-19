@@ -63,6 +63,7 @@ class ClauseDatabase extends LinkedHashMap {
        return buffer.toString();
     }
 
+    @SuppressWarnings("iteration:method.invocation")    // next implementation: call to next in Iterator implementation
     private static class CompleteIterator implements Iterator {
         Iterator values;
         Iterator workingList;

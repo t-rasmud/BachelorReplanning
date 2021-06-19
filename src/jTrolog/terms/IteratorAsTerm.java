@@ -17,6 +17,7 @@ public class IteratorAsTerm extends Term {
         return impl.hasNext();
     }
 
+    @SuppressWarnings("iteration:method.invocation")    // next implementation: call to next in Iterator implementation
     public Object next(){
         return impl.next();
     }

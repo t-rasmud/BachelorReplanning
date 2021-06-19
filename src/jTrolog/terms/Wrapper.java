@@ -28,6 +28,7 @@ public interface Wrapper {
             return underlyingIt.hasNext();
         }
 
+        @SuppressWarnings("iteration:method.invocation")    // next implementation: call to next in Iterator implementation
         public Object next() {
             return BindingsTable.wrapWithID((Term) underlyingIt.next(), ctx);
         }

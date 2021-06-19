@@ -226,6 +226,7 @@ public class BasicLibrary extends Library {
         return false;
     }
 
+    @SuppressWarnings("iteration:method.invocation")    // next called in loop: loop index always less than Iterator size
     public boolean $tofromlist_2(BindingsTable bt, Term structIn, Term listIn) throws PrologException {
         if (structIn instanceof Number || structIn instanceof StructAtom) {
             Struct newList = (WrapStruct) bt.wrapWithID(Parser.createListContainingAnyVars(1));
