@@ -8,6 +8,7 @@ import jTrolog.terms.Number;
 import jTrolog.terms.Double;
 
 import java.util.*;
+import org.checkerframework.dataflow.qual.SideEffectFree;
 
 /**
  * Keeps track of what variables are bound to what Terms and at which ChoicePoint this connection was made.
@@ -378,6 +379,7 @@ public class BindingsTable {
         return term;
     }
 
+    @SideEffectFree
     public Iterator structListIterator(Struct origin, boolean skipLastEmptyList) throws PrologException {
         if (origin.equals(Term.emptyList))
             return Term.iterator;
