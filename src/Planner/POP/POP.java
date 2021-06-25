@@ -113,7 +113,7 @@ public class POP {
         return op;
     }
 
-    @SuppressWarnings("iteration:method.invocation.invalid")    // NoSuchElementException caught: catch block handles NoSuchElementException
+    @SuppressWarnings("iteration:method.invocation")    // NoSuchElementException caught: catch block handles NoSuchElementException
      public OpenPrecondition pollOpenPreconditions() {
          //System.out.println("Before: " + openPreconditions.toString());
          try{
