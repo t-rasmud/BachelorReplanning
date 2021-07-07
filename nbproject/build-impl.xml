@@ -256,7 +256,7 @@ is divided into following sections:
                 <property location="${build.dir}/empty" name="empty.dir"/>
                 <mkdir dir="${empty.dir}"/>
                 <mkdir dir="@{apgeneratedsrcdir}"/>
-                <javac debug="@{debug}" deprecation="${javac.deprecation}" destdir="@{destdir}" encoding="${source.encoding}" excludes="@{excludes}" fork="${javac.fork}" includeantruntime="false" includes="@{includes}" source="1.8" sourcepath="@{sourcepath}" srcdir="@{srcdir}" target="1.8" tempdir="${java.io.tmpdir}">
+                <javac classpath="/Users/rashmi/nonempty-checker/checker-framework/checker/dist/checker-qual.jar" debug="@{debug}" deprecation="${javac.deprecation}" destdir="@{destdir}" encoding="${source.encoding}" excludes="@{excludes}" fork="${javac.fork}" includeantruntime="false" includes="@{includes}" source="1.8" sourcepath="@{sourcepath}" srcdir="@{srcdir}" target="1.8" tempdir="${java.io.tmpdir}">
                     <src>
                         <dirset dir="@{gensrcdir}" erroronmissingdir="false">
                             <include name="*"/>
@@ -331,7 +331,7 @@ is divided into following sections:
             <sequential>
                 <property location="${build.dir}/empty" name="empty.dir"/>
                 <mkdir dir="${empty.dir}"/>
-                <javac debug="@{debug}" deprecation="${javac.deprecation}" destdir="@{destdir}" encoding="${source.encoding}" excludes="@{excludes}" fork="${javac.fork}" includeantruntime="false" includes="@{includes}" source="1.8" sourcepath="@{sourcepath}" srcdir="@{srcdir}" target="1.8" tempdir="${java.io.tmpdir}">
+                <javac classpath="/Users/rashmi/nonempty-checker/checker-framework/checker/dist/checker-qual.jar" debug="@{debug}" deprecation="${javac.deprecation}" destdir="@{destdir}" encoding="${source.encoding}" excludes="@{excludes}" fork="${javac.fork}" includeantruntime="false" includes="@{includes}" source="1.8" sourcepath="@{sourcepath}" srcdir="@{srcdir}" target="1.8" tempdir="${java.io.tmpdir}">
                     <src>
                         <dirset dir="@{gensrcdir}" erroronmissingdir="false">
                             <include name="*"/>
