@@ -205,6 +205,7 @@ public class BindingsTable {
         return min;
     }
 
+    @SideEffectFree
     public Term wrapWithID(Term t) {
         return wrapWithID(t, getUniqueExecutionCtxID());
     }

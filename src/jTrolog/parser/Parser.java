@@ -9,6 +9,7 @@ import jTrolog.terms.*;
 import java.io.*;
 import java.util.*;
 import java.util.regex.Pattern;
+import org.checkerframework.dataflow.qual.SideEffectFree;
 
 /**
  * This class defines a parser of prolog terms and sentences.
@@ -382,6 +383,7 @@ public class Parser implements Serializable {
         return tokenizer.lineno();
     }
 
+    @SideEffectFree
     public static Struct createListContainingAnyVars(int lengthInt) {
         LinkedList vars = new LinkedList();
         for (int i = 0; i < lengthInt; i++)
