@@ -861,6 +861,7 @@ public class BasicLibrary extends Library {
     }
     //internal variable / data base map
 
+    @SuppressWarnings("iteration:method.invocation")    // Iterator has next : Iterator guaranteed to have atleast one element
     public boolean $stripBagList_5(BindingsTable bt, Struct witnessIn, Struct a_and_bSet, Term aSet, Term bSet, Term variant) throws PrologException {
         LinkedList results = new LinkedList();
         LinkedList remains = new LinkedList();

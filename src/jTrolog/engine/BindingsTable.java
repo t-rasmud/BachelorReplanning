@@ -389,6 +389,7 @@ public class BindingsTable {
         return new StructListIterator(origin, skipLastEmptyList);
     }
 
+    @SuppressWarnings("iteration:method.invocation")    // next called in loop: loop index always less than Iterator size (`complete` and `toBeLinked` have same size)
     public Struct createStructList(Collection complete) {
         if (complete.isEmpty())
             return Term.emptyList;
